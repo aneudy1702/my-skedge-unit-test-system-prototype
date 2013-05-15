@@ -1,0 +1,11 @@
+#!/bin/bash -u
+
+declare -a jsfiles
+while IFS= read -r -d '' n ; do
+  jsfiles+=( "$n" )
+done < <(find cb -iname '*.js' -print0)
+
+for f in "${jsfiles[@]}" ; do
+  node resources/node-jslint/bin/jslint.js --browser --indent=2 --todo --unparam --undef --vars --white --sloppy --sub -unnamed -- "$f"
+done
+

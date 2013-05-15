@@ -1,0 +1,1 @@
+var sanityTest = require('./wdfiles/test_cases/sanityTest');

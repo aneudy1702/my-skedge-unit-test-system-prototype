@@ -1,0 +1,638 @@
+/* Temporary override of rounded corners DO NOT GO LIVE WITH THIS
+      |
+      V
+-------------------------------------------------*/
+
+*{border-radius:0px !important;}
+
+/*-----------------------------------------------*/
+
+/* Colors
+----------------------------------------------------
+Navy          -  #233155  main dark background ALT: 002a5f;
+Blue          -  #2f65bb  passive tool action background color
+              -  #2c5fb0  ALT darker blue
+Light Blue    -  #ebf1f6  Light Hover color for highlighting thingds on white
+
+GRAYS
+Warm Gray     -  #eae6e3  Unavailable background color
+Base Gray     -  #999999  Light text color 
+Light Gray    -  #aaaaaa  Disabled
+
+MUSTARDS - Use for appointment elements
+Light Mustard -  #dbc98f  Default color of appointments
+Brite Mustard -  #cba33e  Book Button 
+
+----------------------------------------------------*/
+
+html{
+  overflow: hidden;
+}
+body {
+  font-size: 100%;
+}
+a{
+  cursor: pointer;
+}
+.ui-datepicker{
+	font-size: 85%;
+}
+.translucent {
+  opacity: 0.5
+}
+input[type='text']{
+margin:10px;
+}
+
+
+/* Modal Overrides
+---------------------------------------------------------------------------------*/
+.modal-large{
+  left:0px;
+  margin:0px 0px 0px 5%;
+  width: 90%;
+  }
+
+/*
+ * Copyright 2009 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/*
+ * Standard styling for a goog.ui.DatePicker.
+ *
+ * @author arv@google.com (Erik Arvidsson)
+ */
+
+.goog-date-picker,
+.goog-date-picker th,
+.goog-date-picker td {
+  font: 13px Arial, sans-serif;
+}
+
+.goog-date-picker {
+  -moz-user-focus: normal;
+  -moz-user-select: none;
+  position: relative;
+  border: 1px solid #000;
+  float: left;
+  padding: 2px;
+  color: #000;
+  background: #c3d9ff;
+  cursor: default;
+}
+
+.goog-date-picker th {
+  text-align: center;
+}
+
+.goog-date-picker td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 1px 3px;
+}
+
+
+.goog-date-picker-menu {
+  position: absolute;
+  background: threedface;
+  border: 1px solid gray;
+  -moz-user-focus: normal;
+  z-index: 1;
+  outline: none;
+}
+
+.goog-date-picker-menu ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.goog-date-picker-menu ul li {
+  cursor: default;
+}
+
+.goog-date-picker-menu-selected {
+  background: #ccf;
+}
+
+.goog-date-picker th {
+  font-size: .9em;
+}
+
+.goog-date-picker td div {
+  float: left;
+}
+
+.goog-date-picker button {
+  padding: 0px;
+  margin: 1px 0;
+  border: 0;
+  color: #20c;
+  font-weight: bold;
+  background: transparent;
+}
+
+.goog-date-picker-date {
+  background: #fff;
+}
+
+.goog-date-picker-week,
+.goog-date-picker-wday {
+  padding: 1px 3px;
+  border: 0;
+  border-color: #a2bbdd;
+  border-style: solid;
+}
+
+.goog-date-picker-week {
+  border-right-width: 1px;
+}
+
+.goog-date-picker-wday {
+  border-bottom-width: 1px;
+}
+
+.goog-date-picker-head td {
+  text-align: center;
+}
+
+/** Use td.className instead of !important */
+td.goog-date-picker-today-cont {
+  text-align: center;
+}
+
+/** Use td.className instead of !important */
+td.goog-date-picker-none-cont {
+  text-align: center;
+}
+
+.goog-date-picker-month {
+  width: 12ex;
+}
+
+.goog-date-picker-year {
+  width: 6ex;
+}
+
+.goog-date-picker table {
+  border-collapse: collapse;
+}
+
+.goog-date-picker-other-month {
+  color: #888;
+}
+
+.goog-date-picker-wkend-start,
+.goog-date-picker-wkend-end {
+  background: #eee;
+}
+
+/** Use td.className instead of !important */
+td.goog-date-picker-selected {
+  background: #c3d9ff;
+}
+
+.goog-date-picker-today {
+  background: #9ab;
+  font-weight: bold !important;
+  border-color: #246 #9bd #9bd #246;
+  color: #fff;
+}
+
+/* z-indexes
+---------------------------------------------------------------------------------------------------*/
+.zTop{
+  z-index: 2000;
+}
+
+.z1040{
+  z-index: 1040;
+}
+
+.z1030{
+  z-index: 1030;
+}
+
+ /* TimeColumn Tick Mark Styles
+ --------------------------------------------------------------------------*/
+.tickmark{
+    position : absolute;
+    height : 1px;
+    background : #cccccc;
+    right : 0px;
+  } 
+
+.timetext{
+  position: absolute;
+  right : 12px;
+  font-size : 80%;
+  line-height: 0%;
+  text-align:right;
+  color: #999999;
+  white-space: nowrap;
+ }
+
+ 
+/* FOOTER Menu Navigation
+--------------------------------------------------------------------------------------- */
+.footerNav{
+  position: absolute;
+  overflow: visible;
+  height: 30px;
+  bottom: 0px;
+  width: 15%;
+  }
+
+.footerNav .nav {
+    white-space: nowrap;
+    text-align: center
+}
+
+.footerNav .nav > li{
+    display: inline-block;
+    float: none;
+}
+ 
+.footerNav .nav > li > a {
+  padding:0px;
+  margin: 1px;
+  height:25px;
+  width:29px;
+  background:#002a5f; 
+  /*2f65bb;*/
+  color: #ffffff;
+  font-size: 125%;
+  line-height: 25px;
+  cursor: pointer;
+}
+.footerNav .nav > li > a.imgIcon-service{
+  background: #002a5f url(../../resources/img/servicebell.png) 50% 50% no-repeat;
+}
+ul.submenu{
+  list-style: none;
+  margin-left:0px;
+}
+ul.submenu a{
+  text-decoration: none;
+  display: block;
+  color: #333333;
+}
+
+ul.submenu a:hover{
+  background: #ebf1f6;
+  color: #000000;
+}
+
+/* Bubble styles*/
+.subBubble button.close i{
+  font-size: 80%;
+}
+.subBubble .modal-body {
+  padding: 5px;
+}
+
+/* Bubble Module CSS
+----------------------------------------------------------*/
+.bubble{
+  width:auto;
+  height:auto;
+  position: absolute;
+}
+
+.bubble-inner{
+  width:100%;
+}
+.modal-header {
+    min-height: 20px;
+} 
+.modal-header h3.bubble-title{
+  white-space: nowrap;margin-right:30px;
+
+}
+.modal-header.noTitle {
+height: 10px;
+padding: 2px 10px;
+}
+.bubble.noArrow .arrow,
+.popover.noArrow .arrow{
+  display:none;
+}
+
+/* Footer Specific */
+.subBubble .modal-header{
+  padding:5px;
+  }
+.subBubble .modal-header h3.bubble-title{
+  font-size: 100%;
+}
+
+ 
+/* TopBar Menu Navigation
+--------------------------------------------------------------------------------------- */
+.topBar{
+  background: #233155;
+}
+
+
+/* View Navigation
+--------------------------------------------------------------------------------------- */
+.calendarNav .viewNav{
+  margin-top:5px;
+  float: left;
+  width:130px;
+}
+
+.viewNav ul{
+  margin:5px 0px 0px 80px;
+}
+
+.viewNav .nav > li > a {
+  color: #ebf1f6;
+  text-shadow:none;
+  -webkit-text-shadow:none;
+  -moz-text-shadow:none;
+   
+}
+
+/** Passive state */
+.viewNav .nav > li > a {
+/*background-color: #2f65bb;*/
+background-color: rgba(100,175,255,.2);
+cursor: pointer;
+color: #cccccc;
+padding:6px;
+width: 13px;
+height: 13px;
+text-align: center;
+line-height: 90%;
+font-weight: 600;
+display: inline-block;
+text-shadow:none;
+-webkit-text-shadow:none;
+-moz-text-shadow:none;
+box-shadow: 0px 0px 2px #222;
+
+
+
+transition: all .1s;
+-moz-transition: all .1s; /* Firefox 4 */
+-webkit-transition: all .1s; /* Safari and Chrome */
+-o-transition: all .1s; /* Opera */
+}
+
+/** Hover state */
+.viewNav .nav > li > a:hover {
+  color: #ffffff;
+  background-color: #2f65bb;
+}
+
+/* active state */
+.viewNav .nav-pills > .active > a,
+.viewNav .nav-pills > .active > a:hover {
+  viewNavtext-decoration: none;
+  background-color: #ffffff;
+  color:#2f65bb;
+  cursor: default;
+}
+
+
+.viewNav .tooltip-inner{
+  white-space: nowrap;
+}
+
+/* Calendar Navigation
+-----------------------------------------------------------------------------------------*/
+
+.calendarNav .timeNav > li > a{
+  color: #cccccc;
+}
+
+.calendarNav .timeNav > li > a:hover{
+  color: #ffffff;
+}
+
+.calendarNav .timeNav > li > a i{
+  font-size:150%;
+  margin-top:0px;
+  line-height: 90%;
+  width: 20px;
+ /* transition: all .1s;
+  -moz-transition: all .1s; /* Firefox 4 */
+  -webkit-transition: all .1s; /* Safari and Chrome */
+  -o-transition: all .1s; /* Opera */
+}
+.calendarNav .timeNav > li > a:hover i{
+  font-size:180%;
+  margin-top:-2px; 
+  line-height: 90%;
+}
+
+.calendarNav .timeNav > li > a{
+  color: #cccccc;
+  text-shadow:0px 1px #000033;
+  -webkit-text-shadow:0px 1px #000033;
+  -moz-text-shadow:0px 1px #000033;
+  
+  margin-top:0px;
+
+}
+.calendarNav .prev a:hover i{
+  margin-left:-2px; 
+}
+
+.calendarNav .nav > li.prev,
+.calendarNav .nav > li.next{
+  width: 20px;
+}
+
+.calendarNav .nav > li.prev{
+text-align: left;
+}
+  .calendarNav .nav > li.next{
+text-align: right;
+}
+
+.calendarNav .nav > li.prev > a,
+.calendarNav .nav > li.next > a{
+ padding:10px 0px;
+}
+
+.businessName{
+  color: #ffffff;
+  font-size: 90%;
+  margin-right:10px 
+}
+
+/* Left Nav
+-----------------------------------------------------------------------------------------*/
+.leftNav{
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+
+  -moz-box-shadow: inset -10px 0px 10px -10px #999999;
+  -webkit-box-shadow: inset -10px 0px 10px -10px #999999;
+  box-shadow: inset -10px 0px 10px -10px #999999;
+  overflow-y:auto;
+}
+
+.leftNav .nav-tabs{
+  width:240px;
+}
+
+
+.leftNav .nav-list > li > a{
+  color: #aaaaaa;
+  font-size: 80%;
+  white-space: nowrap;
+  margin-right: -13px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: color .1s, font-size .1s;
+  -moz-transition: color .1s, font-size .1s; /* Firefox 4 */
+  -webkit-transition: color .1s, font-size .1s; /* Safari and Chrome */
+  -o-transition: color .1s, font-size .1s; /* Opera */
+}
+
+.leftNav .nav-list > li > a:hover{
+  color: #333333;
+  font-size: 80%;
+}
+
+.leftNav .nav-list > .active > a, 
+.leftNav .nav-list > .active > a:hover {
+font-size: 90%;
+font-weight: bold;
+color: #002a5f;
+text-shadow: 0 0px 0 rgba(0, 0, 0, 0.2);
+background-color: transparent;
+padding-left: 15px;
+
+transition: all .1s;
+-moz-transition: all .1s; /* Firefox 4 */
+-webkit-transition: all .1s; /* Safari and Chrome */
+-o-transition: all .1s; /* Opera */
+}
+
+.leftNav .nav-list > li > a:hover,
+.leftNav .nav-list > .active > a:hover {
+  background-color: #ebf1f6;
+}
+
+.leftNav .nav-list .nav-header {
+border-bottom: 1px dotted #ccc;
+font-weight: normal;
+}
+
+.leftNav .nav-list > li > i{
+  visibility: hidden;
+  cursor: pointer;
+  margin-top:3px;
+}
+.leftNav .nav-list > li:hover > i{
+  visibility: visible;
+}
+
+
+/* View Container and Events
+-----------------------------------------------------------------------------------------*/
+.viewContainer{
+  border-top:1px solid #cccccc;
+  border-left:1px solid #cccccc;
+   
+}
+.viewContainer>div{
+  margin-top:-2px;
+}
+
+.event{
+  background: #dbc98f;
+  color: #333333;
+  position: absolute;
+  left: 0px;
+  box-shadow: 1px 1px 2px #555555;
+  -webkit-box-shadow: 1px 1px 2px #555555;
+  text-shadow:none;
+  padding: 0px;
+  margin: 0px;
+  width: 95%;
+
+}
+.event-inner{
+  border:1px solid #ffffff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  height:auto;
+  font-weight: 500;
+  right: 0px;
+  overflow: hidden;
+  padding: 1px 3px;
+  text-overflow:ellipsis;
+  text-align: left;
+}
+
+.calColumn{
+  border:1px solid #cccccc;
+  background-color: #eae6e3;
+}
+.calColumnHeader{
+   text-align: center;
+   color: #999999;
+}
+
+/* Window sizing Edits
+-----------------------------------------------------------------------------------------*/
+/* BASE SITE STRUCTURE */
+.rightContent,
+.calendarNav{
+  margin-left: 15%;
+}
+/* LESS THAN 1280px */
+@media only screen and (max-width:1280px){
+  .timeCol{
+    font-size: 90%;
+  }
+  .rightContent,
+  .calendarNav{
+    margin-left: 190px;
+    }
+}
+
+}
+/* LESS THAN 1024px */
+@media only screen and (max-width:1024px){
+  body{
+    font-size: 90%;
+  }
+  .rightContent,
+  .calendarNav{
+    margin-left: 180px;
+  }
+  .footerNav{
+      width: 180px;
+}
+
+  .footerNav .nav > li > a.imgIcon-service {
+   background-size:20px;
+  }
+  .timeCol{
+    min-width: 42px;
+  }
+  .calColumnHeader{
+    font-size: 80%
+  }
+  
+  .footerNav{
+    left:0px;
+    max-width: 180px;
+  }
+  .footerNav .nav > li > a {
+    height: 25px;
+    width: 25px;
+  }
+}
